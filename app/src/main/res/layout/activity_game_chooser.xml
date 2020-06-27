@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id ="@+id/gameChooseLayout"
+    android:background="@drawable/gradient_list"
+    tools:context=".GameChooserActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="SELECT A TEST"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id = "@+id/testChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </Spinner>
+    <ImageView
+        android:id ="@+id/tic_tac_toe_image"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:src="@drawable/tic_tac_toe_image"
+        android:layout_centerInParent="true"
+
+        android:onClick="launchTicTacToe"
+        />
+
+    <ImageView
+        android:id = "@+id/race_game_image"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:src = "@drawable/race_game_picture"
+        android:layout_below="@id/tic_tac_toe_image"
+        android:layout_centerInParent="true"
+        android:onClick="launchRaceGame"
+        />
+
+</RelativeLayout>

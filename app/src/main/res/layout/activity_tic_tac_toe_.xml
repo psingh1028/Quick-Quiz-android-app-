@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToe_Activity">
+
+    <TextView
+        android:id="@+id/TV00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="30dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="120dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TV20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="210dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/TV21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/TV22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="210dp"
+        android:width="90dp"
+        android:height="90dp"
+        android:gravity="center"
+        android:hint="X/0"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/questionDisplayTV"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="300dp"
+        android:textSize="20dp"
+        android:hint="question will appear here "
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:onClick="onSubmitButtonClicked"
+        android:text="Submit" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/RDB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="350dp"
+            android:hint="answer will go here" />
+
+        <RadioButton
+            android:id="@+id/RDB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer will go here" />
+
+        <RadioButton
+            android:id="@+id/RDB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer will go here" />
+
+        <RadioButton
+            android:id="@+id/RDB4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer will go here" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Player1TurnTV"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/p1textview_border"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@color/Blue"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/Player2TurnTV"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/p1textview_border"
+        android:gravity="center"
+        android:text="Player 2"
+        android:textColor="@color/Blue"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StudyLot</string>
+    <string name="createTestButton">Create Test</string>
+    <string name="addQuesButton">Add Question</string>
+    <string name="playGameButton">Play</string>
+    <string name="createNewTest"> Create New Test</string>
+    <string name="statsButton">Stats</string>
+    <string name="testDisplay"> TESTS</string>
+
+    <string name="gameChooseHelp">Simply pick a test first then a game!</string>
+
+    <string name="addQuestHelp">Create a test first, then add your questions! hit the back key to save</string>
+
+    <string name="raceGameHelp">Who will win? pass the device back and forth and test your knowledge!</string>
+
+    <string name="ticTacHelp">Who will win? pass the device back and forth and test your knowledge and your Tic-Tac-Toe Skills!</string>
+
+
+    <string name="mainHelp"> To get started simply create a test!
+The Test you create must have atleast 10 questions so hope you are prepared to learn!
+After you create your test just simply hit the back button and now you are ready to play.
+Tap on the games button and pick your test and pick your game and get ready to learn and have fun.</string>
+
+    <string-array name="names">
+        <item>Bio</item>
+        <item>Mobile</item>
+        <item>Test</item>
+    </string-array>
+</resources>

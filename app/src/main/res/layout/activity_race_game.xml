@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/White"
+    android:padding="16dp"
+    tools:context=".RaceGameActivity">
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:textSize = "35sp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:text = "My Game Race"-->
+            <!--/>-->
+    <TextView
+        android:id="@+id/player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textSize="25sp"
+        android:layout_toEndOf="@+id/radio_group"
+        android:text="Score: 0" />
+
+    <TextView
+        android:id="@+id/player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1_score"
+        android:textSize="25sp"
+        android:layout_alignStart="@+id/player1_score"
+        android:layout_marginTop="-32dp"
+        android:text="Score: 0" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Question: 1/x"
+        android:id="@+id/text_view_question_count"
+        android:layout_below = "@id/text_view_countdown"
+        android:layout_alignParentEnd="true"
+
+        />
+
+    <TextView
+        android:id="@+id/player1_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:background="@drawable/border"
+        android:text="Player1"
+        />
+    <TextView
+        android:id="@+id/player2_ID"
+        android:layout_below="@id/player1_ID"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:background = "@drawable/border"
+        android:layout_height="wrap_content"
+        android:text="Player2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_countdown"
+        android:textSize = "40sp"
+        android:textColor = "@android:color/black"
+        android:text = "00:30"
+        android:layout_alignParentEnd="true"/>
+
+
+    <TextView
+        android:id = "@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text =" This is where the question will be"
+        android:layout_above = "@id/radio_group"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="33dp">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radio_group"
+            android:layout_alignBottom="@+id/radio_group"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3" />
+
+        <RadioButton
+            android:id="@+id/radio_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/radio_group"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/text_view_countdown"
+
+        android:onClick="chooseAnswer"
+        android:text="Confirm" />
+
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/start_quiz"-->
+            <!--android:text ="Choice 1"-->
+            <!--android:padding = "8dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+
+            <!--/>-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text ="Choice 2"-->
+            <!--android:padding = "8dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:id="@+id/Choice2"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text ="Choice 3"-->
+            <!--android:padding = "8dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:id="@+id/Choice3"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text ="Choice 4"-->
+            <!--android:padding = "8dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:id="@+id/Choice4"-->
+            <!--/>-->
+
+
+
+
+
+</RelativeLayout>

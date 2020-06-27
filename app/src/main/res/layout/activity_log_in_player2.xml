@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/secondLoginTableLayout"
+    android:background="@drawable/gradient_list"
+    tools:context=".LogInPlayer2Act">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Player 2:"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Name:"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/userNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text=""
+            android:textSize="20dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Enter"
+            android:textSize="20dp"
+            android:onClick="LogInBtn"
+            android:background="#DADADA"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Create"
+            android:textSize="20dp"
+            android:onClick="CreateBtn"
+            android:background="#DADADA"
+            android:textColor="@android:color/black"/>
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/outPutText"/>
+
+
+    </TableRow>
+
+
+
+
+
+
+
+</TableLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    tools:context=".SampleMainMeny">
+
+
+    <TableRow>
+
+        <Button
+
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Stats"
+            android:textSize="20dp"
+            android:onClick="statsAct"
+            android:background="#DADADA"
+            android:textColor="@android:color/holo_green_dark"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:padding="16dp"/>
+    </TableRow>
+
+</TableLayout>

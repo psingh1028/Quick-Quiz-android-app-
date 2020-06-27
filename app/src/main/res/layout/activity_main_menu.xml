@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id= "@+id/myLayout"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gradient_list"
+
+
+    tools:context=".MainMenuActivity">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/PlayersTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startStatsActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/createTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startTest"
+            android:text="Tests" />
+    </TableRow>
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/play_games_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startGames"
+            android:text="Games" />
+    </TableRow>
+
+
+    <TableRow>
+    <Button
+        android:id="@+id/statsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_games_button"
+        android:onClick="startStatsActivity"
+        android:layout_weight="1"
+        android:text="Stats" />
+
+</TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/flashCardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="flashBtnClick"
+            android:layout_weight="1"
+            android:text="Flash Cards" />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="logOutOnCLick"
+            android:layout_weight="1"
+            android:text="Log Out" />
+
+    </TableRow>
+
+
+
+</TableLayout>
